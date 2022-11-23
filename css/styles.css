@@ -144,7 +144,18 @@ color: var(--accent-color);
 margin-left: 50px;    
 }
 
+/* .contacts-list > .contacts-item::before {
+display: inline-flex;
+align-items: center;
+padding-right: 10px;
+padding-top: 34px;
+padding-bottom: 34px;
+content: "";
+background-color: #000000;
+width: 16px;
+height: 12px;
 
+} */
 
 /* --------------------H E R O-------------------------------    */
 
@@ -198,6 +209,39 @@ margin: 0 auto;
 .features {
 padding-top: 94px;
 padding-bottom: 94px;
+}
+
+.features-list > .features-item::before {
+display: block;
+content: "";
+height: 120px;
+margin-bottom: 30px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.icon-attention::before {
+background-image: 
+url(../css/images/attention.svg), 
+url(../css/images/background.svg);
+}
+
+.icon-clock::before {
+background-image: 
+url(../css/images/clock.svg), 
+url(../css/images/background.svg);
+}
+
+.icon-laptop::before {
+background-image: 
+url(../css/images/laptop.svg), 
+url(../css/images/background.svg);
+}
+
+.icon-astronaut::before {
+background-image: 
+url(../css/images/astronaut.svg), 
+url(../css/images/background.svg);
 }
 
 .features-item-title {

@@ -123,11 +123,12 @@ color: var(--accent-color);
 
 .header-mail, .header-tel {
 display: block;
+outline: 1px solid red;
 }
 
 .contacts-list .link {
-padding-top: 32px;
-padding-bottom: 32px;  
+padding-top: 34px;
+padding-bottom: 34px;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -140,23 +141,22 @@ color: var(--primary-text-color);
 color: var(--accent-color);
 }
 
-.contacts-list .contacts-item + .contacts-item {
-margin-left: 50px;    
+.link:focus,
+.link:hover {
+fill: var(--accent-color);
 }
 
-/* .contacts-list > .contacts-item::before {
-display: inline-flex;
-align-items: center;
-padding-right: 10px;
-padding-top: 34px;
-padding-bottom: 34px;
-content: "";
-background-color: #000000;
-width: 16px;
-height: 12px;
 
-} */
+.contacts-list .contacts-item + .contacts-item {
+margin-left: 30px;
+}
 
+
+.icon-contacts {
+outline: 1px solid red;
+margin-right: 10px;
+fill: var(--primary-text-color);
+}
 /* --------------------H E R O-------------------------------    */
 
 .hero {

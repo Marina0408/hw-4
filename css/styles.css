@@ -10,6 +10,8 @@
     --footer-mail-tel: rgba(255, 255, 255, 0.6)
 }
 
+
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -126,6 +128,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 outline: 1px solid red;
+color: var(--primary-text-color);
 }
 
 .contacts-list .link {
@@ -148,10 +151,11 @@ margin-right: 10px;
 fill: currentColor;
 }
 
-.contacts-item .link:hover, 
+.contacts-item .link:hover,
 .contacts-item .link:focus {
 color: var(--accent-color);
 }
+
 
 /* --------------------H E R O-------------------------------    */
 
@@ -353,6 +357,41 @@ border-radius: 0px 0px 4px 4px;
 
 .staff-list img {
 margin-bottom: 30px;    
+}
+
+.soc-list {
+display: flex;
+justify-content: center;
+margin-top: 16px;
+}
+
+
+.soc-link {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--white-color);
+}
+
+.soc-icon {
+fill: #AFB1B8;
+}
+
+.soc-item + .soc-item {
+margin-left: 10px;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+background-color: var(--accent-color);
+}
+
+.soc-link:hover .soc-icon,
+.soc-link:focus .soc-icon {
+fill: var(--white-color);
 }
 
 /* -------------------F O O T E R--------------------*/

@@ -440,8 +440,24 @@ fill: #AFB1B8;
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: var(--background-hero-footer);
+
 }
 
+.container-wrap .container {
+display: flex;
+justify-content: flex-start;
+}
+
+.footer-contacts {
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.footer-soc {
+padding-top: 72px;
+padding-bottom: 100px;
+margin-left: 70px;
+}
 
 .logo-footer {
  font-family: "Raleway", sans-serif;
@@ -526,6 +542,8 @@ fill: var(--white-color);
 .footer-soc-link:hover {
 background-color: var(--accent-color);
 }
+
+
 
 /* /////////////    PORTFOLIO   /////////////// */
 

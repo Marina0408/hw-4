@@ -57,13 +57,12 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-outline: 1px solid tomato;
 }
 
 /* ---------------------Ш-А-П-К-А----------------- */
 
 .header {
-border: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;
 }
 
 .header .container {
@@ -127,7 +126,6 @@ color: var(--accent-color);
 display: flex;
 justify-content: center;
 align-items: center;
-outline: 1px solid red;
 color: var(--primary-text-color);
 }
 
@@ -146,7 +144,6 @@ margin-left: 30px;
 }
 
 .icon-contacts {
-outline: 1px solid red;
 margin-right: 10px;
 fill: currentColor;
 }
@@ -160,7 +157,7 @@ color: var(--accent-color);
 /* --------------------H E R O-------------------------------    */
 
 .hero {
-/* background-color: var(--background-hero-footer); */
+background-color: var(--background-hero-footer);
 padding-top: 200px;
 padding-bottom: 200px;
 text-align: center;
@@ -215,7 +212,18 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 
-.features-list > .features-item::before {
+.features-bg-icon {
+width: 270px;
+height: 120px;
+background-color: #F5F4FA;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+}
+
+/* .features-list > .features-item::before {
 display: block;
 content: "";
 height: 120px;
@@ -246,7 +254,7 @@ url(../css/images/background.svg);
 background-image: 
 url(../css/images/astronaut.svg), 
 url(../css/images/background.svg);
-}
+} */
 
 .features-item-title {
 margin-bottom: 10px;
@@ -424,6 +432,16 @@ border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+.clients-link .clients-icon:hover,
+.clients-link .clients-icon:focus {
+fill: var(--accent-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+border: 1px solid #2196F3;
 }
 
 .clients-icon {
